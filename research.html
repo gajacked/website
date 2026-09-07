@@ -1,183 +1,140 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-115074405-1"></script>
-	<script>
-		window.dataLayer = window.dataLayer || [];
-		function gtag(){dataLayer.push(arguments);}
-		gtag('js', new Date());
-
-		gtag('config', 'UA-115074405-1');
-	</script>
-
-	<title>Karthik Gajulapalli</title>
-
-	<!-- meta -->
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-
-	<!-- css -->
-	<link rel="stylesheet" href="css/bootstrap.min.css">
-	<link rel="stylesheet" href="css/ionicons.min.css">
-	<link rel="stylesheet" href="css/pace.css">
-	<link rel="stylesheet" href="css/custom.css">
-
-	<!-- js -->
-	<script src="js/jquery-2.1.3.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-	<script src="js/pace.min.js"></script>
-	<script src="js/modernizr.custom.js"></script>
-
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Research — Karthik Gajulapalli</title>
+  <meta name="description" content="Publications of Karthik Gajulapalli in complexity theory, fine-grained complexity, and theoretical cryptography.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/site.css">
+  <script>
+    // Apply a saved light/dark choice before the page paints, to avoid a flash.
+    try { var t = localStorage.getItem('theme'); if (t) document.documentElement.setAttribute('data-theme', t); } catch (e) {}
+  </script>
 </head>
+<body>
+<div class="wrap">
 
-<body id="page">
-	<div class="container">
-		<header id="site-header">
-			<div class="row">
-				<div class="col-md-4 col-sm-5 col-xs-8">
-					<div class="logo">
-						<h2><a href="index.html"><b>Karthik Gajulapalli</b></a></h2>
-					</div>
-				</div><!-- col-md-4 -->
-				<div class="col-md-8 col-sm-7 col-xs-4">
-					<nav class="main-nav" role="navigation">
-						<div class="navbar-header">
-							<button type="button" id="trigger-overlay" class="navbar-toggle">
-								<span class="ion-navicon"></span>
-							</button>
-						</div>
+  <header class="site-header">
+    <a class="name" href="index.html">Karthik Gajulapalli</a>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="research.html" aria-current="page">Research</a>
+      <a href="teaching.html">Teaching</a>
+      <button class="theme-toggle" type="button" aria-label="Toggle light or dark mode" title="Light / dark"></button>
+    </nav>
+  </header>
 
-						<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-							<ul class="nav navbar-nav navbar-right">
-								<li class="cl-effect-11"><a href="index.html" data-hover="Home" >Home</a></li>
-								<li class="cl-effect-11"><a href="research.html" data-hover="Research">Research</a></li>
-								<li class="cl-effect-11"><a href="teaching.html" data-hover="Teaching"> Teaching </a></li>
-								<!-- <li class="cl-effect-11"><a href="complexity.html" data-hover="Complexity" >Complexity</a></li>
-								<li class="cl-effect-11"><a href="crypto.html" data-hover="Crypto">Crypto</a></li>
-								<li class="cl-effect-11"><a href="algorithms.html" data-hover="Algorithms" > Algorithms</a></li> -->
-							</ul>
-						</div><!-- /.navbar-collapse -->
-					</nav>
-				</div><!-- col-md-8 -->
-			</div>
-		</header>
-	</div>
+  <main>
+    <h2>Publications</h2>
 
-	<div class="content-body">
-		<div class="container">
-			<div class="row">
-				<main class="col-xl-9">
-					<article class="post post-1">
-						<!-- <header class="entry-header">
-							<h2>
-								Publications:
-							</h2>
-						</header>
- -->
-							
-							
-							<h4> Downward Self-Reducibility In The Total Function Polynomial Hierarchy</h4>
-							<p>
-								 K. Gajulapalli, <a href="https://sites.google.com/view/zeyong" target="_blank">Z. Li</a>, <a href="https://surendragh.github.io/" target="_blank">S. Ghentiyala</a>, <a href="https://sarsid.github.io/" target="_blank">S. Saraogi</a> <br />
-								<em style="color:#239B56";>SODA 2026</em> <br />
-								<a href="https://arxiv.org/abs/2507.19108" target="_blank"> [pdf] </a> 
-							</p>	
-							
-							<h4> Online Orthogonal Vectors Revisited</h4>
-							<p>
-								 K. Gajulapalli, <a href="https://golovnev.org/" target="_blank">A. Golovnev</a>, <a href="https://samuel-king.org/" target="_blank">S. King</a>, <a href="https://sarsid.github.io/" target="_blank">S. Saraogi</a> <br />
-								<em style="color:#239B56";>SODA 2026 (HALG 2026)</em> <br />
-<!--								<a href="https://arxiv.org/abs/2508.10250" target="_blank"> [pdf] </a> -->
-								<a href="slides/Online_OV.pdf" target="_blank"> [slides Columbia] </a>
-<!--								<a href="https://arxiv.org/abs/2507.19108" target="_blank"> [pdf] </a> -->
-							</p>	
-							
-							
-							<h4> Output-Sparse Matrix Multiplication Using Compressed Sensing</h4>
-							<p>
-								<a href="https://home.cs.colorado.edu/~hbennett/" target="_blank">H. Bennett</a>, K. Gajulapalli, <a href="https://golovnev.org/" target="_blank">A. Golovnev</a>, <a href="https://www.evelynw.xyz/" target="_blank">E. Warton </a> <br />
-								<em style="color:#239B56";>RANDOM 2026</em> <br />
-								<a href="https://arxiv.org/abs/2508.10250" target="_blank"> [pdf] </a> 
-								<a href="slides/os_mm.pptx" target="_blank"> [slides Encore] </a>
-								<a href="https://www.youtube.com/watch?v=GrEpaUpHPlw" target="_blank"> [video Encore]  </a>
-							</p>	
-							
+    <!--
+      To add a paper, copy one <li> block and edit it. Fields:
+        .year     the year shown in the left margin
+        .title    paper title
+        .authors  wrap yourself in <span class="me">
+        .meta     venue, in green
+        .links    [pdf] [slides] [video] as available
+    -->
+    <ol class="pubs">
 
+      <li>
+        <div class="year">2026</div>
+        <div>
+          <p class="title">Downward Self-Reducibility in the Total Function Polynomial Hierarchy</p>
+          <p class="authors"><span class="me">K. Gajulapalli</span>, <a href="https://sites.google.com/view/zeyong" target="_blank" rel="noopener">Z. Li</a>, <a href="https://surendragh.github.io/" target="_blank" rel="noopener">S. Ghentiyala</a>, <a href="https://sarsid.github.io/" target="_blank" rel="noopener">S. Saraogi</a></p>
+          <p class="meta"><span class="venue">SODA 2026</span></p>
+          <p class="links"><a href="https://arxiv.org/abs/2507.19108" target="_blank" rel="noopener">[pdf]</a></p>
+        </div>
+      </li>
 
-							
-							
-							
+      <li>
+        <div class="year repeat">2026</div>
+        <div>
+          <p class="title">Online Orthogonal Vectors Revisited</p>
+          <p class="authors"><span class="me">K. Gajulapalli</span>, <a href="https://golovnev.org/" target="_blank" rel="noopener">A. Golovnev</a>, <a href="https://samuel-king.org/" target="_blank" rel="noopener">S. King</a>, <a href="https://sarsid.github.io/" target="_blank" rel="noopener">S. Saraogi</a></p>
+          <p class="meta"><span class="venue">SODA 2026</span>, invited to HALG 2026</p>
+          <p class="links"><a href="slides/Online_OV.pdf" target="_blank" rel="noopener">[slides, Columbia]</a></p>
+        </div>
+      </li>
 
-							<h4> Matrix Multiplication Verification Using Coding Theory</h4>
-							<p>
-								<a href="https://home.cs.colorado.edu/~hbennett/" target="_blank">H. Bennett</a>, K. Gajulapalli, <a href="https://golovnev.org/" target="_blank">A. Golovnev</a>, <a href="https://www.evelynw.xyz/" target="_blank">E. Warton </a> <br />
-								<em style="color:#239B56";>RANDOM 2024</em> <br />
-								<a href="https://arxiv.org/abs/2309.16176" target="_blank"> [pdf] </a> 
-								<a href="slides/os_mm.pptx" target="_blank"> [slides Encore] </a>
-								<a href="https://www.youtube.com/watch?v=YwLJCeu82Ec" target="_blank"> [video IISC]  </a>
-							</p>	
-							
-							
-							<h4> Oblivious Classes Revisited: Lower Bounds and Hierarchies</h4>
-							<p>
-								 K. Gajulapalli, <a href="https://sites.google.com/view/zeyong" target="_blank">Z. Li</a>, <a href="https://sites.google.com/site/ilyavv/" target="_blank">I. Volkovich</a> <br />
-								<em style="color:#239B56";>FSTTCS 2024</em> <br />
-								<a href="https://eccc.weizmann.ac.il/report/2024/049/" target="_blank"> [pdf] </a> 
-							</p>	
-							
-							
-							
-<!--							<div class="entry-content clearfix">-->
-							<h4> On the Power of Adaptivity for Function Inversion </h4>
-							<p>
-								 K. Gajulapalli, <a href="https://golovnev.org/" target="_blank">A. Golovnev</a>, <a href="https://samuel-king.org/" target="_blank">S. King</a> <br />
-								<em style="color:#239B56";>ITC 2024</em> <br />
-								<a href="https://eccc.weizmann.ac.il/report/2024/054/" target="_blank"> [pdf] </a> 
-							</p>
-						
-							<h4> Range Avoidance for Constant Depth Circuits: Hardness and Algorithms</h4>
-							<p>
-								K. Gajulapalli, <a href="https://golovnev.org/" target="_blank">A. Golovnev</a>, <a href="https://satyajeetn.github.io/" target="_blank">S. Nagargoje</a>, <a href="https://sarsid.github.io/" target="_blank">S. Saraogi</a> <br />
-								<em style="color:#239B56";>RANDOM 2023</em> <br />
-								<a href="https://eccc.weizmann.ac.il/report/2023/021/" target="_blank"> [pdf] </a> 
-								<a href="slides/Range_Avoid_Simons.pptx" target="_blank"> [slides Simons] </a>
-							</p>
+      <li>
+        <div class="year repeat">2026</div>
+        <div>
+          <p class="title">Output-Sparse Matrix Multiplication Using Compressed Sensing</p>
+          <p class="authors"><a href="https://home.cs.colorado.edu/~hbennett/" target="_blank" rel="noopener">H. Bennett</a>, <span class="me">K. Gajulapalli</span>, <a href="https://golovnev.org/" target="_blank" rel="noopener">A. Golovnev</a>, <a href="https://www.evelynw.xyz/" target="_blank" rel="noopener">E. Warton</a></p>
+          <p class="meta"><span class="venue">RANDOM 2026</span></p>
+          <p class="links"><a href="https://arxiv.org/abs/2508.10250" target="_blank" rel="noopener">[pdf]</a> <a href="slides/os_mm.pptx" target="_blank" rel="noopener">[slides, Encore]</a> <a href="https://www.youtube.com/watch?v=GrEpaUpHPlw" target="_blank" rel="noopener">[video, Encore]</a></p>
+        </div>
+      </li>
 
+      <li>
+        <div class="year">2024</div>
+        <div>
+          <p class="title">Matrix Multiplication Verification Using Coding Theory</p>
+          <p class="authors"><a href="https://home.cs.colorado.edu/~hbennett/" target="_blank" rel="noopener">H. Bennett</a>, <span class="me">K. Gajulapalli</span>, <a href="https://golovnev.org/" target="_blank" rel="noopener">A. Golovnev</a>, <a href="https://www.evelynw.xyz/" target="_blank" rel="noopener">E. Warton</a></p>
+          <p class="meta"><span class="venue">RANDOM 2024</span></p>
+          <p class="links"><a href="https://arxiv.org/abs/2309.16176" target="_blank" rel="noopener">[pdf]</a> <a href="https://www.youtube.com/watch?v=YwLJCeu82Ec" target="_blank" rel="noopener">[video, IISc]</a></p>
+        </div>
+      </li>
 
-							<h4> Stability-Preserving, Time-Efficient Mechanisms for School Choice in Two Rounds</h4>
-							<p>
-								K. Gajulapalli, J. Liu, <a href="https://sites.google.com/view/tungtmai/" target="_blank">T. Mai</a>, <a href="https://www.ics.uci.edu/~vazirani/" target="_blank">V. Vazirani</a> <br />
-								<em style="color:#239B56";>FSTTCS 2020</em> <br />
-								<a href="papers/school_choice_2020.pdf" target="_blank"> [pdf] </a> 
-								<a href="slides/fsttcs_2020_school_choice.pdf" target="_blank"> [slides FSTTCS 2020] </a>
-								<a href="https://www.youtube.com/watch?v=7EjiJSazkQw" target="_blank"> [video]  </a>
-							</p>
-							
-<!--						</div>-->
-					</article>
+      <li>
+        <div class="year repeat">2024</div>
+        <div>
+          <p class="title">Oblivious Classes Revisited: Lower Bounds and Hierarchies</p>
+          <p class="authors"><span class="me">K. Gajulapalli</span>, <a href="https://sites.google.com/view/zeyong" target="_blank" rel="noopener">Z. Li</a>, <a href="https://sites.google.com/site/ilyavv/" target="_blank" rel="noopener">I. Volkovich</a></p>
+          <p class="meta"><span class="venue">FSTTCS 2024</span></p>
+          <p class="links"><a href="https://eccc.weizmann.ac.il/report/2024/049/" target="_blank" rel="noopener">[pdf]</a></p>
+        </div>
+      </li>
 
+      <li>
+        <div class="year repeat">2024</div>
+        <div>
+          <p class="title">On the Power of Adaptivity for Function Inversion</p>
+          <p class="authors"><span class="me">K. Gajulapalli</span>, <a href="https://golovnev.org/" target="_blank" rel="noopener">A. Golovnev</a>, <a href="https://samuel-king.org/" target="_blank" rel="noopener">S. King</a></p>
+          <p class="meta"><span class="venue">ITC 2024</span></p>
+          <p class="links"><a href="https://eccc.weizmann.ac.il/report/2024/054/" target="_blank" rel="noopener">[pdf]</a></p>
+        </div>
+      </li>
 
-				</main>
-			</div>
-		</div>
-	</div>
+      <li>
+        <div class="year">2023</div>
+        <div>
+          <p class="title">Range Avoidance for Constant Depth Circuits: Hardness and Algorithms</p>
+          <p class="authors"><span class="me">K. Gajulapalli</span>, <a href="https://golovnev.org/" target="_blank" rel="noopener">A. Golovnev</a>, <a href="https://satyajeetn.github.io/" target="_blank" rel="noopener">S. Nagargoje</a>, <a href="https://sarsid.github.io/" target="_blank" rel="noopener">S. Saraogi</a></p>
+          <p class="meta"><span class="venue">RANDOM 2023</span></p>
+          <p class="links"><a href="https://eccc.weizmann.ac.il/report/2023/021/" target="_blank" rel="noopener">[pdf]</a> <a href="slides/Range_Avoid_Simons.pptx" target="_blank" rel="noopener">[slides, Simons]</a></p>
+        </div>
+      </li>
 
-	<!-- Mobile Menu -->
-	<div class="overlay overlay-hugeinc">
-		<button type="button" class="overlay-close"><span class="ion-ios-close-empty"></span></button>
-		<nav>
-			<ul>
-				<li><a href="index.html">Home</a></li>
-				<!-- <li><a href="complexity.html">Complexity</a></li>
-				<li><a href="crypto.html">Crypto</a></li>
-				<li><a href="algorithms.html">Algorithms</a></li> -->
-				
-			</ul>
-		</nav>
-	</div>
+      <li>
+        <div class="year">2020</div>
+        <div>
+          <p class="title">Stability-Preserving, Time-Efficient Mechanisms for School Choice in Two Rounds</p>
+          <p class="authors"><span class="me">K. Gajulapalli</span>, J. Liu, <a href="https://sites.google.com/view/tungtmai/" target="_blank" rel="noopener">T. Mai</a>, <a href="https://www.ics.uci.edu/~vazirani/" target="_blank" rel="noopener">V. Vazirani</a></p>
+          <p class="meta"><span class="venue">FSTTCS 2020</span></p>
+          <p class="links"><a href="papers/school_choice_2020.pdf" target="_blank" rel="noopener">[pdf]</a> <a href="slides/fsttcs_2020_school_choice.pdf" target="_blank" rel="noopener">[slides, FSTTCS]</a> <a href="https://www.youtube.com/watch?v=7EjiJSazkQw" target="_blank" rel="noopener">[video]</a></p>
+        </div>
+      </li>
 
-	<script src="js/script.js"></script>
+    </ol>
+  </main>
 
+  <footer class="site-footer"></footer>
+
+</div>
+<script>
+  document.querySelector('.theme-toggle').addEventListener('click', function () {
+    var root = document.documentElement;
+    var dark = root.getAttribute('data-theme') === 'dark' ||
+      (!root.getAttribute('data-theme') && matchMedia('(prefers-color-scheme: dark)').matches);
+    var next = dark ? 'light' : 'dark';
+    root.setAttribute('data-theme', next);
+    try { localStorage.setItem('theme', next); } catch (e) {}
+  });
+</script>
 </body>
 </html>

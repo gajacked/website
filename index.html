@@ -1,166 +1,85 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-115074405-1"></script>
-	<script>
-		window.dataLayer = window.dataLayer || [];
-		function gtag(){dataLayer.push(arguments);}
-		gtag('js', new Date());
-
-		gtag('config', 'UA-115074405-1');
-	</script>
-
-	<title>Karthik Gajulapalli</title>
-
-	<!-- meta -->
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-
-	<!-- css -->
-	<link rel="stylesheet" href="css/bootstrap.min.css">
-	<link rel="stylesheet" href="css/ionicons.min.css">
-	<link rel="stylesheet" href="css/pace.css">
-	<link rel="stylesheet" href="css/custom.css">
-
-	<!-- js -->
-	<script src="js/jquery-2.1.3.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-	<script src="js/pace.min.js"></script>
-	<script src="js/modernizr.custom.js"></script>
-
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Karthik Gajulapalli</title>
+  <meta name="description" content="Karthik Gajulapalli is an Assistant Professor of Computer Science at the University of Central Florida working in complexity theory and theoretical cryptography.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/site.css">
+  <script>
+    // Apply a saved light/dark choice before the page paints, to avoid a flash.
+    try { var t = localStorage.getItem('theme'); if (t) document.documentElement.setAttribute('data-theme', t); } catch (e) {}
+  </script>
 </head>
+<body class="home">
+<div class="wrap">
 
-<body id="page">
-	<div class="container">
-		<header id="site-header">
-			<div class="row">
-				<div class="col-md-4 col-sm-5 col-xs-8">
-					<div class="logo">
-						<h2><a href="index.html"><b>Karthik Gajulapalli</b></a></h2>
-					</div>
-				</div><!-- col-md-4 -->
-				<div class="col-md-8 col-sm-7 col-xs-4">
-					<nav class="main-nav" role="navigation">
-						<div class="navbar-header">
-							<button type="button" id="trigger-overlay" class="navbar-toggle">
-								<span class="ion-navicon"></span>
-							</button>
-						</div>
+  <header class="site-header">
+    <a class="name" href="index.html">Karthik Gajulapalli</a>
+    <nav>
+      <a href="index.html" aria-current="page">Home</a>
+      <a href="research.html">Research</a>
+      <a href="teaching.html">Teaching</a>
+      <button class="theme-toggle" type="button" aria-label="Toggle light or dark mode" title="Light / dark"></button>
+    </nav>
+  </header>
 
-						<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-							<ul class="nav navbar-nav navbar-right">
-								<li class="cl-effect-11"><a href="index.html" data-hover="Home">Home</a></li>
-								<li class="cl-effect-11"><a href="research.html" data-hover="Research">Research</a></li>
-								<li class="cl-effect-11"><a href="teaching.html" data-hover="Teaching"> Teaching </a></li>
-<!--				 				<li class="cl-effect-11"><a href="exposition.html" data-hover="Expositions">Expositions </a></li>-->
-								<!-- <li class="cl-effect-11"><a href="projects.html" data-hover="Projects">Projects</a></li> -->
-								<!--< li class="cl-effect-11"><a href="assets/M.BURQ_resume.pdf" data-hover="CV">CV</a></li> -->
-							</ul>
-						</div><!-- /.navbar-collapse -->
-					</nav>
-				</div><!-- col-md-8 -->
-			</div>
-		</header>
-	</div>
+  <main>
+    <div class="bio">
+      <div>
+        <img src="assets/karthik.jpg" alt="Karthik Gajulapalli" width="900" height="720">
+        <div class="contact">
+          HEC 245E, UCF<br>
+          karthik dot complexity<br>at gmail dot com
+        </div>
+      </div>
 
-	<div class="content-body">
-		<div class="container">
-			<div class="row">
-				<main class="col-md-12">
-					<!-- <h1 class="page-title">About Me</h1> -->
-					<article class="post">
-						<div class="col-md-4">
-							<figure class="img-responsive-center">
-								<img class="img-responsive" src="assets/Karthik.jpg" alt="Karthik Gajulapalli">
-							</figure>
+      <div>
+        <p>I am an Assistant Professor of Computer Science at the University of Central Florida.</p>
 
+        <p>I work in theoretical computer science, mostly complexity theory and theoretical cryptography. Problems I am currently thinking about:</p>
+        <ul>
+          <li>Circuit range avoidance and unconditional circuit lower bounds</li>
+          <li>Fine-grained complexity and conditional lower bounds</li>
+          <li>Pseudo-deterministic algorithms</li>
+          <li>Complexity of optimal compression algorithms</li>
+          <li>Data structure lower bounds</li>
+        </ul>
 
+        <p>Before UCF, I did my PhD at Georgetown, advised by the wonderful <a href="https://golovnev.org/" target="_blank" rel="noopener">Alexander Golovnev</a>. Before that I was an undergraduate at UC Irvine, where I was advised by <a href="https://www.ics.uci.edu/~vazirani/" target="_blank" rel="noopener">Vijay Vazirani</a>.</p>
 
-						</div>
+        <p>This fall I am teaching <a href="discrete_math_f26/">Honors Discrete Math (COT 3100C)</a>.</p>
 
+        <!-- Uncomment and edit once you know what you want to say.
+        <p><strong>Prospective students.</strong> I am looking for PhD students interested in complexity theory. If that is you, apply to the UCF CS PhD program and mention my name; feel free to email me as well, but please include something specific about what you would like to work on.</p>
+        -->
 
-						<div class="col-md-8">
-							<div class="entry-content clearfix">
-								
-								<p>
-									I am an Assistant Professor at the University of Central Florida. 
-								</p>
+        <p class="muted">Here is a <a href="assets/uci_p=np.pdf" target="_blank" rel="noopener">flyer</a> for a talk I gave as an undergrad trying to recruit unsuspecting students into complexity theory.</p>
+      </div>
+    </div>
+  </main>
 
-								<p>
+  <footer class="site-footer">
+    <!-- Add the profiles you use. Suggested: Google Scholar, dblp, arXiv, CV.
+    <a href="https://scholar.google.com/citations?user=XXXX" target="_blank" rel="noopener">Google Scholar</a> &nbsp;
+    <a href="https://dblp.org/pid/XXXX" target="_blank" rel="noopener">dblp</a> &nbsp;
+    <a href="assets/cv.pdf" target="_blank" rel="noopener">CV</a>
+    -->
+  </footer>
 
-									I am broadly interested in theoretical computer science, especially complexity theory and theoretical cryptography. Some specific problems I am very interested in:
-									
-									<ul>
-
-										<li> Circuit Range Avoidance and Unconditional Circuit Lower Bounds </li>
-										<li> Fine-Grained Complexity and Conditional Lower Bounds</li>
-										<li>Pseudo-Deterministic Algorithms</li>
-										<li>Complexity of Optimal Compression Algorithms</li>
-										<li>Data Structure Lower Bounds </li>
-									</ul>
-								</p>
-
-								<p>
-									
-									
-									
-									
-<!--									Last summer, I visited <a href="https://home.cs.colorado.edu/~hbennett/", target = "_blank">Huck Bennett</a> at beautiful <a href="https://www.bouldercoloradousa.com/things-to-do/visiting-cu/", target="_blank">CU Boulder</a> working on designing fine-grained algorithms for matrix problems. Previously, I had visited Simons in Spring 2023 for their program on <a href="https://simons.berkeley.edu/programs/Meta-Complexity2023", target = "_blank">Meta-Complexity</a>, and also in Fall 2019 for their program <a href="https://simons.berkeley.edu/programs/market2019", target = "_blank">Online and Matching-Based Market Design</a>.-->
-								</p>		
-							
-								<p>
-									 Before coming to UCF, I got my PhD at Georgetown where I was advised by the wonderful <a href="https://golovnev.org/" target="_blank"> Alexander Golovnev</a>, and even before that I was an undergrad at UC Irvine.
-<!--									  Georgetown I got both my undergraduate and masters degrees from UC Irvine where I was advised by <a href="https://www.ics.uci.edu/~vazirani/" target="_blank">Vijay Vazirani</a>. -->
-									 
-								</p>
-								
-								<p>
-									 Here is a <a href="assets/uci_p=np.pdf", target="_blank">flyer </a> for a fun talk I gave as an undergrad trying to recruit unsuspecting students to work on complexity theory with me.
-								</p>
-
-
-								
-								<BR>
-								<h4>Contact Information</h4>
-								<p>
-									HEC 245E, University of Central Florida
-									 <BR>
-									<b>email:</b>  firstname.lastname@ucf dot edu
-								</p> 
-
-							</div>
-						</div>
-					</article>
-				</main>
-			</div>
-		</div>
-	</div>
-	<footer id="site-footer">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12">
-				</div>
-			</div>
-		</div>
-	</footer>
-
-	<!-- Mobile Menu -->
-	<div class="overlay overlay-hugeinc">
-		<button type="button" class="overlay-close"><span class="ion-ios-close-empty"></span></button>
-		<nav>
-			<ul>
-				<li><a href="index.html">Home</a></li>
-				<li><a href="research.html">Research</a></li>
-				<li><a href="teaching.html"> Teaching </a></li>
-<!--				<li><a href="exposition.html">Expositions </a></li>-->
-				<!-- <li><a href="projects.html">Projects</a></li> -->
-				<!-- <li><a href="assets/M.BURQ_resume.pdf">CV</a></li> -->
-			</ul>
-		</nav>
-	</div>
-
-	<script src="js/script.js"></script>
-
+</div>
+<script>
+  document.querySelector('.theme-toggle').addEventListener('click', function () {
+    var root = document.documentElement;
+    var dark = root.getAttribute('data-theme') === 'dark' ||
+      (!root.getAttribute('data-theme') && matchMedia('(prefers-color-scheme: dark)').matches);
+    var next = dark ? 'light' : 'dark';
+    root.setAttribute('data-theme', next);
+    try { localStorage.setItem('theme', next); } catch (e) {}
+  });
+</script>
 </body>
 </html>
