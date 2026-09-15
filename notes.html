@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Notes — Karthik Gajulapalli</title>
+  <meta name="description" content="Expository notes and scribe notes by Karthik Gajulapalli on matching markets, hierarchy theorems, and related topics.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/site.css">
+  <script>
+    // Apply a saved light/dark choice before the page paints, to avoid a flash.
+    try { var t = localStorage.getItem('theme'); if (t) document.documentElement.setAttribute('data-theme', t); } catch (e) {}
+  </script>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="site-header">
+    <a class="name" href="index.html">Karthik Gajulapalli</a>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="research.html">Research</a>
+      <a href="teaching.html">Teaching</a>
+      <a href="notes.html" aria-current="page">Notes</a>
+      <button class="theme-toggle" type="button" aria-label="Toggle light or dark mode" title="Light / dark"></button>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Expository notes</h2>
+    <p class="muted">Scribe notes and surveys written as a student. They have not been carefully proofread.</p>
+
+    <ol class="pubs">
+      <li>
+        <div class="year">2020</div>
+        <div>
+          <p class="title">One-Sided Matching Markets and Top Trading Cycles</p>
+          <p class="meta">Scribe notes, <span class="venue">September 2020</span></p>
+          <p class="links"><a href="expositions/top_trading_cycle.pdf" target="_blank" rel="noopener">[pdf]</a></p>
+        </div>
+      </li>
+      <li>
+        <div class="year repeat">2020</div>
+        <div>
+          <p class="title">Matching Markets with Ordinal Preferences and No Endowment</p>
+          <p class="meta">Scribe notes, <span class="venue">September 2020</span></p>
+          <p class="links"><a href="expositions/ordinal_market_no_endowment.pdf" target="_blank" rel="noopener">[pdf]</a></p>
+        </div>
+      </li>
+      <li>
+        <div class="year">2019</div>
+        <div>
+          <p class="title">Stable Matchings</p>
+          <p class="meta">Scribe notes, <span class="venue">September 2019</span></p>
+          <p class="links"><a href="expositions/stable_matching.pdf" target="_blank" rel="noopener">[pdf]</a></p>
+        </div>
+      </li>
+      <li>
+        <div class="year repeat">2019</div>
+        <div>
+          <p class="title">A Survey on Hierarchy Theorems for Randomized Time</p>
+          <p class="meta">Survey, <span class="venue">April 2019</span></p>
+          <p class="links"><a href="expositions/randomized_time_hierarchy.pdf" target="_blank" rel="noopener">[pdf]</a></p>
+        </div>
+      </li>
+    </ol>
+  </main>
+
+  <footer class="site-footer"></footer>
+
+</div>
+<script>
+  document.querySelector('.theme-toggle').addEventListener('click', function () {
+    var root = document.documentElement;
+    var dark = root.getAttribute('data-theme') === 'dark' ||
+      (!root.getAttribute('data-theme') && matchMedia('(prefers-color-scheme: dark)').matches);
+    var next = dark ? 'light' : 'dark';
+    root.setAttribute('data-theme', next);
+    try { localStorage.setItem('theme', next); } catch (e) {}
+  });
+</script>
+</body>
+</html>
